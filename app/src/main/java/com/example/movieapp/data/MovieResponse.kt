@@ -9,7 +9,6 @@ data class MovieResponse(
     val Director: String,
     val Genre: String,
     val Language: String,
-    val Metascore: String,
     val Plot: String,
     val Poster: String,
     val Production: String,
