@@ -8,8 +8,9 @@ import retrofit2.http.Query
 interface MovieInterface {
     @GET()
     suspend fun getAllMovies(
-        @Query("i")s:String,
-        @Query("apikey")apikey:String
+        @Query("i") i: String,
+        @Query("apikey") apikey: Int,
+        apiKey: String
 
     ):Response<MovieResponse>
 }
