@@ -13,10 +13,28 @@
         <action
             android:id="@+id/action_movieFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_movieFragment_to_view_holder_movie"
+            app:destination="@id/view_holder_movie" />
+        <action
+            android:id="@+id/action_movieFragment_to_view_holder_movie2"
+            app:destination="@id/view_holder_movie" />
+        <action
+            android:id="@+id/action_movieFragment_to_view_holder_movie3"
+            app:destination="@id/view_holder_movie" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.movieapp.ui.detail.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/view_holder_movie"
+        android:name="com.example.movieapp.view_holder_movie"
+        android:label="fragment_view_holder_movie"
+        tools:layout="@layout/fragment_view_holder_movie" >
+        <action
+            android:id="@+id/action_view_holder_movie_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
 </navigation>
